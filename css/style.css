@@ -1,0 +1,59 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background-color: blue;
+    color: white;
+}
+
+.search-bar button{
+        background-color: gold;
+}
+h1, h2 {
+    color: blue;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-container > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header form {
+    display: flex;
+    gap: 5px;
+}
+
+h1{
+    font-size: 2;
+    border-bottom: 2px solid gold;
+    width:fit-content;
+    padding-bottom: 0.1rem;
+}
+main{
+    max-width: 1100;
+    margin:1rem;
+    padding: 1rem;
+
+}
