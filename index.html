@@ -4,306 +4,326 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
         <div class="head-container">
 
             <h1>My Portfolio</h1>
 
-            <ul>
-                <li>
-                    <a href="https://www.mitnepal.com" target="_blank">
-                        <div class="logo">
-                            <img src="images/logo.jpg" alt="logo" width="100" height="50">
-                        </div>
-                    </a>
-                </li>
-            </ul>
+            <a href="https://www.mitnepal.com" target="_blank"
+                rel="noopener noreferrer" class="logo">
+                <img src="images/logo.jpg" alt="MIT Logo"
+                    width="100" height="50">
+            </a>
 
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#project">Project</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <form>
-                <input type="text" placeholder="Search">
+            <form class="search-form" action="#project">
+                <input type="search" placeholder="Search"
+                    aria-label="Search portfolio">
                 <button type="submit">Search</button>
             </form>
 
         </div>
     </header>
 
-    <main>
+    <main id="home">
 
-        <!-- About Me Section -->
-        <div id="about">
-            <article>
-                <div class="about-container">
+        <!-- About Me -->
+        <section id="about" class="content-section">
+            <article class="about-container">
 
-                    <h2>About Me</h2>
+                <h2>About Me</h2>
 
-                    <img src="images/profile.jpeg"
-                        alt="Profile Image" width="250" height="250">
+                <img src="images/profile.jpeg"
+                    alt="Profile picture of Sandesh Simkhada"
+                    width="250" height="250">
 
-                    <div id="san"></div>
+                <p>
+                    I am Sandesh Simkhada, a 19-year-old student from
+                    Thali, Kathmandu. I am currently studying Information
+                    Technology at Model Institute of Technology (MIT).
+                    I am interested in technology, web development, and
+                    graphic design. I enjoy learning new skills and
+                    working on creative projects to improve my knowledge
+                    and experience.
+                </p>
 
+            </article>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="content-section">
+            <article class="skills-container">
+
+                <h2>My Skills</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Skills</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Programming Languages</td>
+                            <td>Python, C, C++, Java</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>MySQL, MongoDB, Oracle, PostgreSQL</td>
+                        </tr>
+                        <tr>
+                            <td>Tools</td>
+                            <td>Git, MS Word, PowerPoint, Excel, IntelliJ</td>
+                        </tr>
+                        <tr>
+                            <td>Frameworks</td>
+                            <td>Django, Spring Boot</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </article>
+        </section>
+
+        <!-- Projects -->
+        <section id="project" class="content-section">
+            <article class="project-container">
+
+                <h2>My Projects</h2>
+
+                <section class="project-card">
+                    <h3>Student Management System</h3>
                     <p>
-                        I am Sandesh Simkhada, a 19-year-old student from Thali, Kathmandu.
-                        I am currently studying Information Technology at Model Institute of
-                        Technology (MIT). I am interested in technology, web development, and
-                        graphic design. I enjoy learning new skills and working on creative
-                        projects to improve my knowledge and experience.
+                        The Student Management System is designed to
+                        manage student information in an organized way.
+                        It stores student details, manages academic
+                        records, and helps users view and update
+                        student information.
                     </p>
+                </section>
+
+                <section class="project-card">
+                    <h3>Health Care System</h3>
+                    <p>
+                        The Health Care System is designed to manage
+                        basic healthcare information and services.
+                        It helps manage patient details, doctor
+                        information, appointments, and medical records.
+                    </p>
+                </section>
+
+                <section class="project-card">
+                    <h3>My Portfolio Website</h3>
+                    <p>
+                        This portfolio website presents my education,
+                        skills, projects, and contact information.
+                        It uses HTML, CSS, and JavaScript to demonstrate
+                        my web design and development skills.
+                    </p>
+                    <p>
+                        <a href="https://sandeshsimkhada.github.io/test/"
+                            target="_blank" rel="noopener noreferrer">
+                            View My Website
+                        </a>
+                    </p>
+                </section>
+
+            </article>
+        </section>
+
+        <!-- Image Slider -->
+        <section id="gallery" class="content-section">
+            <article class="gallery-container">
+
+                <h2>My Image Gallery</h2>
+
+                <p class="gallery-description">
+                    Browse through the images in my gallery.
+                </p>
+
+                <div class="slider">
+
+                    <div class="slider-track">
+
+                        <div class="slide">
+                            <img src="images/1image.jpeg"
+                                alt="Gallery image 1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/2image.jpeg"
+                                alt="Gallery image 2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/3image.jpeg"
+                                alt="Gallery image 3">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/4image.jpeg"
+                                alt="Gallery image 4">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/5image.jpeg"
+                                alt="Gallery image 5">
+                        </div>
+
+                    </div>
+
+                    <button class="slider-btn prev"
+                        type="button"
+                        aria-label="Previous image">
+                        &#10094;
+                    </button>
+
+                    <button class="slider-btn next"
+                        type="button"
+                        aria-label="Next image">
+                        &#10095;
+                    </button>
 
                 </div>
+
+                <div class="dots"
+                    aria-label="Choose a gallery image"></div>
+
             </article>
-        </div>
+        </section>
 
+        <!-- Education -->
+        <section id="education" class="content-section">
+            <article class="education-container">
 
-        <!-- Skills Section -->
-        <div id="skills">
-            <article>
-                <div class="skills-container">
+                <h2>Education</h2>
 
-                    <h2>My Skills</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S.N.</th>
+                            <th>Level</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                            <th>Grade</th>
+                            <th>GPA</th>
+                        </tr>
+                    </thead>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Category</th>
-                                <th>Skills</th>
-                            </tr>
-                        </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>SEE</td>
+                            <td>Sainik Awashiya Mahavidyalaya</td>
+                            <td>2024</td>
+                            <td>A</td>
+                            <td>3.8</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Bachelor's Degree</td>
+                            <td>Model Institute of Technology</td>
+                            <td>2026</td>
+                            <td>A</td>
+                            <td>3.9</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                        <tbody>
-
-                            <tr>
-                                <td>Programming Languages</td>
-                                <td>Python, C, C++, Java</td>
-                            </tr>
-
-                            <tr>
-                                <td>Database</td>
-                                <td>MySQL, MongoDB, Oracle, PostgreSQL</td>
-                            </tr>
-
-                            <tr>
-                                <td>Tools</td>
-                                <td>Git, MS Word, PowerPoint, Excel, IntelliJ</td>
-                            </tr>
-
-                            <tr>
-                                <td>Frameworks</td>
-                                <td>Django, Spring Boot</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-                </div>
             </article>
-        </div>
+        </section>
 
+        <!-- Contact -->
+        <section id="contact" class="content-section">
+            <article class="contact-container">
 
-        <!-- Projects Section -->
-        <div id="project">
-            <article>
-                <div class="project-container">
+                <h2>Contact Me</h2>
 
-                    <h2>My Projects</h2>
+                <form action="#" method="get">
 
-                    <section>
-                        <h3>Student Management System</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"
+                        placeholder="Enter your name" required>
 
-                        <p>
-                            The Student Management System is designed to manage student
-                            information in an organized way. It stores student details,
-                            manages academic records, and helps users view and update
-                            student information.
-                        </p>
-                    </section>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email" required>
 
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"
+                        rows="6" placeholder="Write your message here"
+                        required></textarea>
 
-                    <section>
-                        <h3>Health Care System</h3>
+                    <button type="submit">Send Message</button>
 
-                        <p>
-                            The Health Care System is designed to manage basic healthcare
-                            information and services. It helps manage patient details,
-                            doctor information, appointments, and medical records.
-                        </p>
-                    </section>
+                </form>
 
-
-                    <section>
-                        <h3>My Portfolio Website</h3>
-
-                        <p>
-                            This portfolio website presents my education, skills, projects,
-                            and contact information in an organized layout. It was developed
-                            using HTML and CSS to demonstrate my web design skills.
-                        </p>
-
-                        <p>
-                            <a href="https://sandeshsimkhada.github.io/test/" target="_blank">
-                                View My Website
-                            </a>
-                        </p>
-
-                    </section>
-
-                </div>
             </article>
-        </div>
+        </section>
 
+        <!-- Social Media -->
+        <section id="social" class="content-section">
+            <article class="social-container">
 
-        <!-- Contact Section -->
-        <div id="contact">
-            <article>
-                <div class="contact-container">
+                <h2>Find Me On</h2>
 
-                    <h2>Contact Me</h2>
+                <a href="https://www.facebook.com/sandesh.simkhada.2025"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.png"
+                        alt="Facebook" width="70" height="70">
+                </a>
 
-                    <form>
+                <a href="https://www.gmail.com"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/gmail.jpg"
+                        alt="Gmail" width="70" height="70">
+                </a>
 
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
+                <a href="https://www.linkedin.com/feed/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/linkeden.png"
+                        alt="LinkedIn" width="70" height="70">
+                </a>
 
-                        <br><br>
+                <a href="https://www.instagram.com/san__desh_0/"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram.jpg"
+                        alt="Instagram" width="70" height="70">
+                </a>
 
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-
-                        <br><br>
-
-                        <label for="message">Message:</label>
-
-                        <textarea id="message" name="message"
-                            rows="10" cols="50"
-                            placeholder="Write your message here"></textarea>
-
-                        <br><br>
-
-                        <button type="submit">Enter</button>
-
-                    </form>
-
-                </div>
             </article>
-        </div>
-
-
-        <!-- Education Section -->
-        <div id="education">
-            <article>
-                <div class="education-container">
-
-                    <h2>Education</h2>
-
-                    <table>
-
-                        <thead>
-                            <tr>
-                                <th>S.N.</th>
-                                <th>Level</th>
-                                <th>Institution</th>
-                                <th>Year</th>
-                                <th>Grades</th>
-                                <th>GPA</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td>1</td>
-                                <td>SEE</td>
-                                <td>Sainik Awashiya Mahavidlaya</td>
-                                <td>2024</td>
-                                <td>A</td>
-                                <td>3.8</td>
-                            </tr>
-
-                            <tr>
-                                <td>2</td>
-                                <td>Bachelor of Science</td>
-                                <td>MIT</td>
-                                <td>2026</td>
-                                <td>A</td>
-                                <td>3.9</td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
-            </article>
-        </div>
-
-
-        <!-- Social Media Section -->
-        <div id="social">
-            <article>
-                <div class="social-container">
-
-                    <h2>Find Me On</h2>
-
-                    <a href="https://www.facebook.com/sandesh.simkhada.2025"
-                        target="_blank">
-                        <img src="images/facebook.png"
-                            alt="Facebook" width="100" height="100">
-                    </a>
-
-                    <a href="https://www.gmail.com"
-                        target="_blank">
-                        <img src="images/gmail.jpg"
-                            alt="Gmail" width="100" height="100">
-                    </a>
-
-                    <a href="https://www.linkedin.com/feed/"
-                        target="_blank">
-                        <img src="images/linkeden.png"
-                            alt="LinkedIn" width="100" height="100">
-                    </a>
-
-                    <a href="https://www.instagram.com/san__desh_0/"
-                        target="_blank">
-                        <img src="images/instagram.jpg"
-                            alt="Instagram" width="100" height="100">
-                    </a>
-
-                </div>
-            </article>
-        </div>
+        </section>
 
     </main>
 
-
     <!-- Footer -->
     <footer>
-
         <div class="copyright-container">
-
-            <p>
-                © 2026 Hello MIT. All rights reserved.
-            </p>
-
+            <p>&copy; 2026 Sandesh Simkhada. All rights reserved.</p>
         </div>
-
     </footer>
 
 </body>
-
 </html>
-
